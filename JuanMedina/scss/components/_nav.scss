@@ -1,0 +1,33 @@
+.position_logo {
+    @include flexible(flex , row , wrap , center , center);
+    width: 20%;
+  }
+  
+  .logo {
+    width: 5rem;
+  }
+  
+  .navegacion {
+    width: 80%;
+    @include flexible(flex , row , wrap , flex-end , center);
+    margin: 0 80px 0 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-family: $font;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  ul li {
+    display: inline;
+    padding: 10px;
+  }
+  
+  ul li:hover {
+    background-color: #838385;
+    padding-top: 100%;
+    padding-bottom: 5%;
+  }
+  

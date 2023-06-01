@@ -9,10 +9,9 @@ header {
   padding: 0.6% 0 0.6%;
 }
 
-/* Aqui comienza el nav----------------------------------------------------- */
-
 .position_logo {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   width: 20%;
@@ -25,6 +24,7 @@ header {
 .navegacion {
   width: 80%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
   margin: 0 80px 0 0;
@@ -48,13 +48,6 @@ ul li:hover {
   padding-bottom: 5%;
 }
 
-
-
-
-
-
-/* Aqui comienza Inicio----------------------------------------------------- */
-
 h1 {
   font-size: 4rem;
   font-family: "Bebas Neue", cursive;
@@ -71,12 +64,27 @@ h1 {
   color: #ffffff;
 }
 
+h4 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 200;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .inicio {
   width: 100%;
   /* height: 100vh; */
   overflow: hidden;
 }
-
 .inicio video {
   padding: 0px;
 }
@@ -90,20 +98,70 @@ h1 {
   display: none;
 }
 
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  color: rgb(238, 245, 220);
+  margin-top: -5px;
+}
+.footer__item1 {
+  background-color: #ff359a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item2 {
+  background-color: #dd207e;
+  width: 100%;
+  height: 100%;
+}
+.footer__texto {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 100;
+}
+.footer__boton {
+  font-family: "Bebas Neue", cursive;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 1em;
+  padding: 0 1em;
+  border: #ffffff solid 1px;
+  border-radius: 10px;
+  background-color: #dd207e;
+  transition: 0.8s;
+}
+.footer__boton:hover {
+  color: #dd207e;
+  background-color: #ffffff;
+}
+.footer__item2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
 
-
-
-
-/* Aqui comienza Clases----------------------------------------------------- */
+.fa-brands {
+  color: #ffffff;
+  padding: 0 1em;
+}
 
 .profesores {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
-
-.profesores_fotos {
+.profesores__fotos {
   width: 270px;
   background-color: #414141;
   border: #414141 5px solid;
@@ -111,100 +169,33 @@ h1 {
   position: relative;
   overflow: hidden;
 }
-
-.profeTexto {
+.profesores__texto {
   position: absolute;
   bottom: 0;
   padding: 2px 20px 30px;
-  background: hsl(330, 100%, 61%, 0.9);
+  background: hsla(330, 100%, 61%, 0.9);
   color: #ffffff;
-
   transform: translateY(80%);
   transition: all 0.5s ease-in-out;
 }
-
-.profesores_fotos:hover .profeTexto {
+.profesores__fotos:hover .profesores__texto {
   transform: translateY(0%);
 }
 
-
-
-
-/* Aqui comienza nuestro espacio----------------------------------------------------- */
-
-.textoSalon {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.contenedorGrid {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-bottom: 2rem;
-}
-
-.grid {
-  width: 1024px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  overflow: hidden;
-  gap: 6px;
-}
-
-.item2,
-.item4,
-.item5,
-.item6 {
-  height: 341px;
-  width: 100%;
-  object-fit: cover;
-  transition: 0.3s;
-}
-
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: span 2;
-  height: 341px;
-  width: 100%;
-  object-fit: cover;
-
-  transition: 0.3s;
-}
-
-.item3 {
-  grid-row-start: span 2;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 0.3s;
-}
-
-.item5 {
-  grid-column-start: span 3;
-}
-
-.grid img:hover {
-  opacity: 0.3;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
-}
-
-/* Aqui comienza Nosotros----------------------------------------------------- */
-
 .video_nosotros {
-  /* margin: 30px auto 20px; */
-  width: 90%;
+  margin: 30px auto 20px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
 }
 
-.desc_video {
+.desc_salones {
   font-family: "Bebas Neue", cursive;
   font-size: 18px;
+  text-align: center;
+  font-size: 2em;
 }
 
 video {
@@ -212,24 +203,15 @@ video {
   padding-left: 3%;
 }
 
-
 .servicios {
-  padding: 30px 50px;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  padding: 30px 50px;
+  text-align: center;
 }
-
-.servicios div h4 {
-  color: #414141;
-  font-size: 20px;
-  margin: 15px 0;
-}
-
-.foto {
+.servicios__foto {
   height: 400px;
   width: 300px;
   margin: 5px 10px;
@@ -237,38 +219,19 @@ video {
   transition: 0.3s;
   border: 1px solid rgb(201, 201, 201);
 }
-
-.foto:hover {
+.servicios__foto:hover {
   box-shadow: #838385 1px 2px 1px;
   margin-top: -5px;
 }
-
-.foto p {
+.servicios__foto p {
   color: #838385;
   font-size: 18px;
 }
 
-
-h4 {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Bebas Neue", cursive;
-  font-weight: 200;
-}
-
-/* Aqui comienza Contactanos----------------------------------------------------- */
-
-.contacto {
-  margin-top: 0;
-  color: #ffffff;
- 
-}
-
-.bg {
-  background-image: url(../imagenes/grupo.jpg);
-  height: 100vh;
-  background-size: cover;
-
+.servicios div h4 {
+  color: #414141;
+  font-size: 20px;
+  margin: 15px 0;
 }
 
 form {
@@ -280,16 +243,6 @@ form {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-}
-
-h5 {
-  color: #ffffff;
-  font-size: 2em;
-  font-family: "Bebas Neue", cursive;
-  font-weight: 200;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 input,
@@ -320,385 +273,23 @@ textarea {
   color: #ffffff;
 }
 
-/* Aqui comienza el footer----------------------------------------------------- */
-
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 10em;
-  color: rgb(238, 245, 220);
-  margin-top: -5px;
-}
-
-.footer__item1 {
-  background-color: #dd207e;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__item2 {
-  background-color: #ff359a;
-  width: 100%;
-  height: 100%;
-}
-
-.footer__texto {
-  font-size: 1.5rem;
-  font-family: "Bebas Neue", cursive;
-  font-weight: 100;
-}
-
-.footer__boton {
-  font-family: "Bebas Neue", cursive;
+.contacto {
+  margin-top: 0;
   color: #ffffff;
-  font-size: 1.5rem;
-  margin-left: 1em;
-  padding: 0 1em;
-  border: #ffffff solid 1px;
-  border-radius: 10px;
-  background-color: #dd207e;
-  transition: 0.8s;
 }
 
-.footer__boton:hover {
-  color: #dd207e;
-  background-color: #ffffff;
-  border: #dd207e;
+.bg {
+  background-image: url(../imagenes/grupo.jpg);
+  height: 100vh;
+  background-size: cover;
 }
 
-.footer__item2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-}
-
-.fa-brands {
-  color: #ffffff;
-  padding: 0 1em;
-}
-
-.row img{
+.row img {
   filter: grayscale(100%);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.row img:hover{
+.row img:hover {
   filter: grayscale(0%);
   box-shadow: #414141 2px 2px 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ////////////////////////RESPONSIVE ////////////////////////*/
-
-/* Aqui comienza Responsive----------------------------------------------------- */
-
-
-
-
-@media screen and (max-width: 768px) {
-  header {
-    
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bg {
-    height: 50vh;
-  }
-  
-
-  h1 {
-    font-size: 3em;
-  }
-
-  /* Aqui comienza Nav Responsive----------------------------------------------------- */
-
-  .position_logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .navegacion ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .navegacion ul li {
-    padding: 2px 100%;
-    background-color: #dd207e;
-    margin: 1px;
-  }
-
-  .navegacion {
-    margin: auto;
-  }
-
-  .inicio_movile {
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .imagenMovile {
-    display: block;
-    padding: 0px;
-  }
-
-  .inicio {
-    display: none;
-  }
-
-  .imagenPortada {
-    display: none;
-  }
-
-  /* Aqui comienza Salón Responsive----------------------------------------------------- */
-
-  .textoSalon {
-    font-size: 1em;
-  }
-
-  .grid {
-    display: grid;
-    width: 95%;
-    height: 100%;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(5, 1fr);
-  }
-
-  .grid img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .item1,
-  .item3,
-  .item5 {
-    grid-row-start: span 1;
-    grid-column-start: span 1;
-  }
-
-  /* Aqui comienza Nosotros Responsive----------------------------------------------------- */
-
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .servicios {
-    padding: 0px;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .foto {
-    width: 70%;
-    height: 60%;
-    margin: 10px 0px;
-    padding: 1% 0 2% 0;
-  }
-
-  .foto img {
-    width: 90%;
-  }
-
-  .servicios .foto h4 {
-    font-size: 2em;
-  }
-
-  .foto p {
-    font-size: 1.5em;
-  }
-
-  .video_nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-  }
-
-  video {
-    padding-right: 0px;
-    width: 100%;
-  }
-
-  .desc_video {
-    margin: 10px auto;
-    text-align: center;
-    font-size: 2em;
-  }
-
-
-  .profesores{
-    
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-
-  /* Aqui comienza Contacto Responsive----------------------------------------------------- */
-
-  form {
-    margin: 10px auto;
-    width: 90vw;
-  }
-
-  /* Aqui comienza footer Responsive----------------------------------------------------- */
-
-  .footer__item1 {
-    flex-direction: column;
-  }
-  .footer__texto .footer__boton {
-    padding: 4px;
-  }
-
-  .footer__item1 p {
-    font-size: 20px;
-  
-  }
-
-  .footer__boton{
-    font-size: 1rem;
-    margin-top: 2%;
-  }
-
-  
-}
-
-@media screen and (max-width: 992px) {
-  .inicio {
-    height: 100%;
-  }
-  .h1_portada {
-    margin: 50px 30px;
-    font-size: 10em;
-  }
-
-  .profesores_fotos {
-    width: 300px;
-  }
-
-  .profesores_fotos img {
-    width: 300px;
-    gap: 10%;
-  }
-
-  form {
-    margin: 50px auto;
-    width: 95vw;
-  }
-
-  .bg {
-    height: 90vh;
-  }
-
-  #boton{
-    width: 50%;
-    margin-left: 25%;
-  }
-
-  /* Aqui comienza Nosotros Responsive ------------------------------------------------- */
-
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .servicios {
-    padding: 0px;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .foto {
-    width: 70%;
-    height: 60%;
-    margin: 10px 0px;
-    padding: 0 0 2% 0;
-  }
-
-  .foto img {
-    width: 100%;
-    
-  }
-
-  .servicios .foto h4 {
-    font-size: 2em;
-  }
-
-  .foto p {
-    font-size: 1em;
-    padding: 0 1rem;
-    text-align: justify;
-  }
-
-  .video_nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-  }
-
-  .video_nosotros video {
-    width: 100%;
-    padding: 0px;
-  }
-
-  video {
-    padding-right: 0px;
-    
-  }
-
-  .desc_video {
-    margin: 10px auto;
-    text-align: center;
-    font-size: 2em;
-  }
-
-  
-}
-
-@media screen and (max-width: 1000px) {
-  .h1_portada {
-    display: none;
-  }
-
-  form{
-    width: 80%;
-  }
-  .bg{
-      height: 95vh;
-  }
-  #boton{
-    padding: 5px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .h1_portada {
-    font-size: 5em;
-  }
-  
-}
+}/*# sourceMappingURL=estilos.css.map */

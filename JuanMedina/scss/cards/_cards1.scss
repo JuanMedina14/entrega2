@@ -1,0 +1,27 @@
+.profesores {
+    @include flexible(flex , row , wrap , center , center);
+    margin-bottom: 10px;
+
+    &__fotos {
+        width: 270px;
+        background-color: $secundario;
+        border: $secundario 5px solid;
+        margin: 3px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__texto {
+        position: absolute;
+        bottom: 0;
+        padding: 2px 20px 30px;
+        background: hsl(330, 100%, 61%, 0.9);
+        color: #ffffff;
+        transform: translateY(80%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__fotos:hover &__texto {
+        transform: translateY(0%);
+    }
+}

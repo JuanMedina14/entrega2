@@ -1,0 +1,9 @@
+.row img{
+    filter: grayscale(100%);
+    transition: .5s;
+  }
+  
+  .row img:hover{
+    filter: grayscale(0%);
+    box-shadow: #414141 2px 2px 5px;
+  }

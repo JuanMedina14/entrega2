@@ -1,0 +1,51 @@
+form {
+    width: 450px;
+    margin: auto;
+    background: $primario;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    border: $secundario 1px solid;
+    color: #000000;
+    padding: 15px;
+    transition: 0.4s;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background: $secundario;
+    color: #ffffff;
+}
+
+.contacto {
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.bg {
+    background-image: url(../imagenes/grupo.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}

@@ -1,0 +1,59 @@
+.video_nosotros {
+    margin: 30px auto 20px;
+    width: 100%;
+    @include flexible(flex , row , wrap , center , center);
+  }
+  
+  .desc_salones {
+    font-family: $font;
+    font-size: 18px;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  video {
+    width: 630px;
+    padding-left: 3%;
+  }
+  
+  
+  .servicios {
+    @include flexible(flex , row , wrap , center , center);
+    padding: 30px 50px;
+    text-align: center;
+    
+
+    &__foto {
+      height: 400px;
+      width: 300px;
+      margin: 5px 10px;
+      padding: 5px;
+      transition: 0.3s;
+      border: 1px solid rgb(201, 201, 201);
+
+      &:hover {
+        box-shadow: #838385 1px 2px 1px;
+        margin-top: -5px;
+      }
+
+      p {
+        color: #838385;
+        font-size: 18px;
+      }
+    } 
+  }
+  
+  .servicios div h4 {
+    color: $secundario;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  
+  
+ 
+  
+  
+  
+  
+  

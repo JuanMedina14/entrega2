@@ -1,0 +1,56 @@
+.footer {
+  @include flexible(flex , row , wrap , center , center);
+  height: 5em;
+  color: rgb(238, 245, 220);
+  margin-top: -5px;
+
+  &__item1 {
+    background-color: $primario;
+    width: 100%;
+    height: 100%;
+    @include flexible(flex , row , wrap , center , center);
+  }
+
+
+  &__item2 {
+    background-color: $terciario;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__texto {
+    font-size: 1.5rem;
+    font-family: $font;
+    font-weight: 100;
+  }
+
+  &__boton {
+    font-family: $font;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 1em;
+    padding: 0 1em;
+    border: #ffffff solid 1px;
+    border-radius: 10px;
+    background-color: $terciario;
+    transition: 0.8s;
+  }
+
+  &__boton:hover {
+    color: $terciario;
+    background-color: #ffffff;
+  }
+
+  &__item2 {
+    @include flexible(flex , row , wrap , center , center);
+    font-size: 2em;
+  }
+}
+
+
+.fa-brands {
+  color: #ffffff;
+  padding: 0 1em;
+}
+
+
