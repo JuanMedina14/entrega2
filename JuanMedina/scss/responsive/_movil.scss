@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+    header {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg {
+        height: 50vh;
+    }
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+
+
+    /* Aqui comienza Nav Responsive----------------------------------------------------- */
+
+    .position_logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navegacion ul li {
+        padding: 2px 100%;
+        background-color: #dd207e;
+        margin: 1px;
+    }
+
+    .navegacion {
+        margin: auto;
+    }
+
+    .inicio_movile {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .imagenMovile {
+        display: block;
+        padding: 0px;
+    }
+
+    .inicio {
+        display: none;
+    }
+
+    .imagenPortada {
+        display: none;
+    }
+
+
+
+
+
+    /* Aqui comienza Nosotros Responsive----------------------------------------------------- */
+
+
+
+    .servicios__foto:hover {
+        box-shadow: #838385 1px 2px 1px;
+        margin-top: 0px;
+      }
+
+    .video_nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    video {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .desc_salones {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 2em;
+        padding: 0 2em 1em 2em;
+    }
+
+
+    /* Aqui comienza Contacto Responsive----------------------------------------------------- */
+
+    form {
+        margin: 10px auto;
+        width: 90vw;
+    }
+
+    /* Aqui comienza footer Responsive----------------------------------------------------- */
+
+    .footer__item1 {
+        flex-direction: column;
+    }
+
+    .footer__texto .footer__boton {
+        padding: 4px;
+    }
+
+    .footer__item1 p {
+        font-size: 20px;
+
+    }
+
+    .footer__boton {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+
+
+}
+

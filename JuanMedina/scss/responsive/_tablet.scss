@@ -1,0 +1,93 @@
+@media screen and (max-width: 950px) {
+    .inicio {
+        height: 100%;
+    }
+
+    .h1_portada {
+        margin: 50px 30px;
+        font-size: 10em;
+    }
+
+    form {
+        margin: 20px auto;
+        width: 95vw;
+    }
+
+    .bg {
+        height: 90vh;
+    }
+
+    #boton {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    /* Aqui comienza Nosotros Responsive ------------------------------------------------- */
+
+    
+
+    .servicios {
+        padding: 0px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .video_nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .video_nosotros video {
+        width: 100%;
+        padding: 0px;
+    }
+
+    video {
+        padding-right: 0px;
+
+    }
+
+    .desc_salones {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .h1_portada {
+        display: none;
+    }
+
+
+    form {
+        width: 80%;
+    }
+
+    .bg {
+        height: 95vh;
+    }
+
+    #boton {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .h1_portada {
+        font-size: 5em;
+    }
+
+    .servicios {
+        padding: 0px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -193,10 +192,11 @@ h5 {
 }
 
 .desc_salones {
-  font-family: "Bebas Neue", cursive;
-  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
   text-align: center;
-  font-size: 2em;
+  padding: 0 6em 1em 6em;
+  font-weight: 100;
 }
 
 video {
@@ -227,11 +227,12 @@ video {
 .servicios__foto p {
   color: #838385;
   font-size: 18px;
+  padding: 10px 20px;
 }
 
 .servicios div h4 {
   color: #414141;
-  font-size: 20px;
+  font-size: 30px;
   margin: 15px 0;
 }
 
@@ -277,6 +278,7 @@ textarea {
 .contacto {
   margin-top: 0;
   color: #ffffff;
+  padding-top: 20px;
 }
 
 .bg {
@@ -341,44 +343,10 @@ textarea {
   .imagenPortada {
     display: none;
   }
-  /* Aqui comienza Salón Responsive----------------------------------------------------- */
-  .textoSalon {
-    font-size: 1em;
-  }
-  .grid {
-    display: grid;
-    width: 95%;
-    height: 100%;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .grid img {
-    width: 100%;
-    height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .item1,
-  .item3,
-  .item5 {
-    grid-row-start: span 1;
-    grid-column-start: span 1;
-  }
   /* Aqui comienza Nosotros Responsive----------------------------------------------------- */
-  .foto {
-    width: 70%;
-    height: 60%;
-    margin: 10px 0px;
-    padding: 1% 0 2% 0;
-  }
-  .foto img {
-    width: 90%;
-  }
-  .servicios .foto h4 {
-    font-size: 2em;
-  }
-  .foto p {
-    font-size: 1.5em;
+  .servicios__foto:hover {
+    box-shadow: #838385 1px 2px 1px;
+    margin-top: 0px;
   }
   .video_nosotros {
     display: flex;
@@ -394,6 +362,7 @@ textarea {
     margin: 10px auto;
     text-align: center;
     font-size: 2em;
+    padding: 0 2em 1em 2em;
   }
   /* Aqui comienza Contacto Responsive----------------------------------------------------- */
   form {
@@ -415,20 +384,13 @@ textarea {
     margin-top: 2%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 950px) {
   .inicio {
     height: 100%;
   }
   .h1_portada {
     margin: 50px 30px;
     font-size: 10em;
-  }
-  .profesores_fotos {
-    width: 300px;
-  }
-  .profesores_fotos img {
-    width: 300px;
-    gap: 10%;
   }
   form {
     margin: 20px auto;
@@ -444,25 +406,9 @@ textarea {
   /* Aqui comienza Nosotros Responsive ------------------------------------------------- */
   .servicios {
     padding: 0px;
-    flex-direction: column;
+    padding-bottom: 20px;
+    flex-direction: row;
     width: 100%;
-  }
-  .foto {
-    width: 90%;
-    height: 60%;
-    margin: 10px 0px;
-    padding: 0 0 2% 0;
-  }
-  .foto img {
-    width: 100%;
-  }
-  .servicios .foto h4 {
-    font-size: 2em;
-  }
-  .foto p {
-    font-size: 1em;
-    padding: 0 1rem;
-    text-align: center;
   }
   .video_nosotros {
     display: flex;
@@ -480,7 +426,7 @@ textarea {
   .desc_salones {
     margin: 10px auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -500,5 +446,11 @@ textarea {
 @media screen and (max-width: 1200px) {
   .h1_portada {
     font-size: 5em;
+  }
+  .servicios {
+    padding: 0px;
+    padding-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
